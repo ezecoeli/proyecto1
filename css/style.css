@@ -644,7 +644,7 @@
           grid-template-areas:
               "titulo2"
               "texto2"
-              "foto2" ;
+              "foto2";
       }
 
       .seccion3 {
@@ -656,6 +656,20 @@
               "texto3"
               "foto3";
       }
+
+      /*Contacto-------------------------------------------------*/
+
+      main section form {
+          width: 90%;
+      }
+
+      /*Residencia-----------------------------------------------*/
+
+      .bloqueResidencia img {
+        width: 150px;
+        margin-bottom: 30px;
+    }
+
 
       /*Footer---------------------------------------------------*/
       footer {
