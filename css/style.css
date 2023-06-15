@@ -1,0 +1,690 @@
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,700&display=swap');
+  /*   font-family: 'Nunito', sans-serif;  */
+
+  /*colores
+#007A83  verde
+#FF953C  naranja
+*/
+
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
+  html {
+      font-family: Nunito;
+  }
+
+
+  /*estilos header ------------------------------------------------------------------------------*/
+
+  header a {
+      font-size: 1.2rem;
+      color: #007A83;
+      text-decoration: none;
+  }
+
+  nav {
+      font-family: Nunito;
+      width: 50%;
+      color: black;
+      font-weight: bold;
+  }
+
+
+  header {
+      height: 120px;
+      top: 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0px;
+      background-color: #fcf5f1;
+
+  }
+
+  header img {
+      width: 150px;
+      margin-top: 5px;
+      margin-left: 5px;
+  }
+
+  header ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      margin-right: 30px;
+  }
+
+
+
+  /* estilos footer------------------------------------------------------------------------------------*/
+
+  footer {
+      font-weight: bold;
+      margin-top: 50px;
+      background-color: #fcf5f1;
+      color: black;
+      font-family: Nunito;
+      font-size: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0px;
+  }
+
+  footer img {
+      width: 40px;
+  }
+
+
+  a[href^="tel:"]:before {
+      content: "\260e";
+      margin-right: 0.5em;
+  }
+
+  a[href^="tel:"] {
+      border-top: black 1px solid;
+      border-bottom: black 1px solid;
+      color: black;
+      margin-left: 15px;
+      text-decoration: none;
+      text-align: left;
+  }
+
+  footer div {
+      width: 25%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+
+  .imagenInferior {
+      margin-top: 5px;
+      width: 100%;
+      height: 250px
+  }
+
+  .textoInferior {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 40px;
+      font-family: Nunito;
+  }
+
+
+  /*estilos index---------------------------------------------------------------------------------------*/
+
+
+  .tituloIndex {
+      text-shadow: 0px -1px 21px rgb(255, 255, 255);
+      text-align: center;
+      font-size: 50px;
+      height: 600px;
+      background-image: url(../medios/background.jpg);
+      background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../medios/background.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: rgb(234, 226, 226);
+  }
+
+  .subtitulo {
+      font-family: Nunito;
+      font-size: 28px;
+      text-shadow: 0px -1px 21px rgb(255, 255, 255);
+  }
+
+  .bienvenidos {
+      font-size: 50px;
+      font-style: italic;
+      font-family: Nunito;
+      text-align: center;
+      height: 120px;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      color: #00686f;
+      background-color: white;
+      border: black;
+      font-weight: bold;
+  }
+
+  .textoBienvenidos {
+      font-family: Nunito;
+      font-size: 28px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      background-color: white;
+      height: 120px;
+      margin-left: 80px;
+      margin-right: 80px;
+  }
+
+  .indexP {
+      font-family: Nunito;
+      font-size: 20px;
+  }
+
+  .contenidoIndex {
+      margin-top: 30px;
+      border-style: inset;
+  }
+
+  .seccion1 h3,
+  .seccion2 h3,
+  .seccion3 h3 {
+      font-size: 30px;
+      font-weight: 900;
+      font-family: Nunito;
+  }
+
+  .seccion1 {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 40% 40%;
+      grid-template-rows: 50px 100px 100px 150px;
+      grid-template-areas:
+          "titulo1 foto1"
+          "titulo1 foto1"
+          "texto1 foto1"
+          "nada foto1";
+      justify-items: center;
+      align-items: center;
+      justify-content: center;
+      column-gap: 50px;
+  }
+
+  .seccion1 img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      box-shadow: -1px -2px 13px 1px rgba(0, 0, 0, 0.75);
+  }
+
+  .titulo1 {
+      grid-area: titulo1;
+  }
+
+  .texto1 {
+      grid-area: texto1;
+      font-size: 22px;
+      text-align: center;
+  }
+
+  .foto1 {
+      grid-area: foto1;
+  }
+
+  .seccion2 {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 40% 40%;
+      grid-template-rows: 50px 100px 100px 150px;
+      grid-template-areas:
+          "foto2 titulo2"
+          "foto2 titulo2"
+          "foto2 texto2"
+          "foto2 nada";
+      justify-items: center;
+      align-items: center;
+      justify-content: center;
+      column-gap: 50px;
+  }
+
+  .seccion2 img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      box-shadow: -1px -2px 13px 1px rgba(0, 0, 0, 0.75);
+  }
+
+  .titulo2 {
+      grid-area: titulo2;
+  }
+
+  .texto2 {
+      grid-area: texto2;
+      font-size: 22px;
+      text-align: center;
+  }
+
+  .foto2 {
+      grid-area: foto2;
+  }
+
+
+  .seccion3 {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      display: grid;
+      grid-template-columns: 40% 40%;
+      grid-template-rows: 50px 100px 100px 150px;
+      grid-template-areas:
+          "titulo3 foto3"
+          "titulo3 foto3"
+          "texto3 foto3"
+          "nada foto3";
+      justify-items: center;
+      align-items: center;
+      justify-content: center;
+      column-gap: 50px;
+  }
+
+  .seccion3 img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      box-shadow: -1px -2px 13px 1px rgba(0, 0, 0, 0.75);
+  }
+
+  .titulo3 {
+      grid-area: titulo3;
+  }
+
+  .texto3 {
+      grid-area: texto3;
+      font-size: 22px;
+      text-align: center;
+  }
+
+  .foto3 {
+      grid-area: foto3;
+  }
+
+
+  /* estilos conocenos-------------------------------------------------------------------------------------*/
+
+  .tituloConocenos {
+      color: white;
+      text-shadow: 0px -1px 21px rgb(255, 255, 255);
+      background-image: url(../medios/conocenosback.jpg);
+      background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../medios/conocenosback.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-x: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 450px;
+      font-size: 50px;
+      text-align: center;
+  }
+
+  .bloqueConocenos {
+      display: grid;
+      grid-template-columns: 30% 30% 30%;
+      grid-template-rows: 20px 150px 150px 80px 200px 200px 200px;
+      grid-template-areas:
+          "subtitulo subtitulo quienes"
+          "texto1 texto1 quienes"
+          "texto2 texto2 quienes"
+          "espacio espacio espacio"
+          "luca2 texto3 scoty2"
+          "luca2 texto4 scoty2"
+          "luca2 texto5 scoty2";
+      justify-items: center;
+      align-items: center;
+      justify-content: center;
+      row-gap: 0px;
+      column-gap: 30px;
+
+      margin-top: 50px;
+  }
+
+  .subtituloConocenos {
+      grid-area: subtitulo;
+      font-size: 30px;
+      font-weight: bold;
+  }
+
+  .texto-conocenos1 {
+      grid-area: texto1;
+      font-size: 20px;
+  }
+
+  .texto-conocenos2 {
+      grid-area: texto2;
+      font-size: 20px;
+  }
+
+  .texto-conocenos3 {
+      grid-area: texto3;
+      font-size: 20px;
+  }
+
+  .texto-conocenos4 {
+      grid-area: texto4;
+      font-size: 20px;
+  }
+
+  .texto-conocenos5 {
+      grid-area: texto5;
+      font-size: 20px;
+  }
+
+  .luca2 {
+      grid-area: luca2;
+  }
+
+  .scoty2 {
+      grid-area: scoty2;
+  }
+
+  .quienesSomos {
+      grid-area: quienes;
+
+  }
+
+
+  .bloqueConocenos img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      box-shadow: -1px -2px 10px 1px rgba(0, 0, 0, 0.75);
+  }
+
+
+  /*estilos contacto-------------------------------------------------------------------------------------*/
+
+
+  .tituloContacto {
+      text-shadow: 0px -1px 21px rgb(255, 255, 255);
+      text-align: center;
+      font-size: 50px;
+      height: 450px;
+      background-image: url(../medios/buscando.png);
+      background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../medios/buscando.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+      margin-bottom: 20px;
+  }
+
+  .mensaje {
+      text-align: center;
+      font-size: 35px;
+      font-weight: 900;
+      margin-bottom: 30px;
+  }
+
+  main section form {
+      width: 100%;
+      justify-content: center;
+      align-items: left;
+      flex-direction: column;
+      display: flex;
+      max-width: 600px;
+      margin: 0 auto;
+      color: black;
+      font-weight: bold;
+      font-family: Nunito;
+      margin-bottom: 50px;
+  }
+
+  .localizacion {
+      font-size: 35px;
+      font-style: oblique;
+      display: flex;
+      height: 50px;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 10px;
+  }
+
+  main section iframe {
+      width: 100%;
+  }
+
+  .mapa {
+      border-style: double;
+      border-color: #007A83;
+      border-width: 5px;
+      margin: 20px 0px 20px 0px;
+      padding-top: 2px;
+      text-align: center;
+      font-family: Nunito;
+      align-items: center;
+  }
+
+  /*estilos tarifas---------------------------------------------------------------------------------*/
+
+  .tituloTarifas {
+      color: white;
+      text-shadow: 0px -1px 21px rgb(255, 255, 255);
+      background-image: url(../medios/dogos.jpg);
+      background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../medios/dogos.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 450px;
+      font-size: 50px;
+      text-align: center;
+  }
+
+  .subtituloTarifas {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 35px;
+      font-weight: 900;
+  }
+
+  .tablaPrecios {
+      margin-top: 50px;
+      margin-bottom: 50px;
+  }
+
+  .tablaPrecios img {
+      display: block;
+      align-items: center;
+      text-align: center;
+      border-radius: 12px;
+      margin: auto;
+      width: 75%;
+      height: 75%;
+  }
+
+  .subtituloHorarios {
+      margin-top: 80px;
+      text-align: center;
+      font-size: 35px;
+      font-weight: 900;
+  }
+
+  .horarios {
+      margin-top: 50px;
+      margin-bottom: 100px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 20px;
+      text-shadow: 0px -1px 21px rgb(15, 14, 14);
+  }
+
+  .horarios div {
+      align-self: center;
+      padding-right: 100px;
+  }
+
+  .horarios img {
+      width: 400px;
+      height: 400px;
+      border-radius: 200px;
+      border: solid 0.5px black;
+  }
+
+
+
+  /*estilos residencia---------------------------------------------------------------*/
+
+  .tituloResidencia {
+      text-shadow: 0px -1px 21px rgb(255, 255, 255);
+      text-align: center;
+      font-size: 50px;
+      height: 450px;
+      background-image: url(../medios/guarderia.jpg);
+      background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../medios/guarderia.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+      margin-bottom: 20px;
+  }
+
+  .subtituloResidencia {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      text-align: center;
+      font-size: 35px;
+      font-weight: 900;
+  }
+
+  .bloqueResidencia {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+
+  .bloqueResidencia img {
+      width: 350px;
+  }
+
+
+  /*Mobile--------------------------------------------------------------------------*/
+  /*Mobile--------------------------------------------------------------------------*/
+  /*Mobile--------------------------------------------------------------------------*/
+  /*Mobile--------------------------------------------------------------------------*/
+  /*Mobile--------------------------------------------------------------------------*/
+
+  @media only screen and (max-width: 500px) {
+
+      header {
+          flex-direction: column;
+          justify-content: center;
+      }
+
+      nav {
+          width: 100%;
+      }
+
+      header a {
+          font-size: 1rem;
+      }
+
+      header img {
+          width: 90px;
+      }
+
+      /*Index----------------------------------------------------------------*/
+
+      .tituloIndex {
+          height: 250px;
+          font-size: 20px;
+      }
+
+      .subtitulo {
+          font-size: 15px;
+      }
+
+      .bienvenidos {
+          font-size: 25px;
+      }
+
+      .textoBienvenidos {
+          font-size: 15px;
+      }
+
+      .seccion1 h3,
+      .seccion2 h3,
+      .seccion3 h3 {
+          font-size: 20px;
+      }
+
+      .texto1,
+      .texto2,
+      .texto3 {
+          font-size: 15px;
+      }
+
+
+      .seccion1 {
+          margin-top: 10px;
+          grid-template-columns: 90%;
+          grid-template-rows: 30px 100px 200px;
+          grid-template-areas:
+              "titulo1"
+              "texto1"
+              "foto1"
+          ;
+      }
+
+      .seccion2 {
+          margin-top: 10px;
+          grid-template-columns: 90%;
+          grid-template-rows: 30px 120px 200px;
+          grid-template-areas:
+              "titulo2"
+              "texto2"
+              "foto2" ;
+      }
+
+      .seccion3 {
+          margin-top: 10px;
+          grid-template-columns: 90%;
+          grid-template-rows: 30px 120px 200px;
+          grid-template-areas:
+              "titulo3"
+              "texto3"
+              "foto3";
+      }
+
+      /*Footer---------------------------------------------------*/
+      footer {
+          height: 20px;
+          margin-top: 0px;
+      }
+
+      footer img {
+          width: 30px;
+          justify-items: center;
+          align-items: center;
+      }
+
+      footer div {
+          width: 30%;
+      }
+
+      footer div p {
+          display: none;
+      }
+
+      .imagenInferior {
+          width: 100%;
+          height: 100px
+      }
+
+      .textoInferior {
+          font-size: 10px;
+          margin-top: 5px;
+      }
+
+  }
