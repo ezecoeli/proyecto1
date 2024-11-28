@@ -17,7 +17,4 @@ El proyecto contiene los siguientes archivos y carpetas:
 
 Para ver el proyecto en acción, simplemente clona este repositorio y abre el archivo `index.html` en tu navegador:
 
-```bash
-git clone https://github.com/ezecoeli/proyecto1.git
-cd proyecto1
-open index.html
+
